@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Video</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -163,29 +165,40 @@
                 </section>
             </article>
             <article>
-                <input type="checkbox" id="vision">
-                <label for="vision">Vision</label>
-                <input type="checbox" id="mission">
-                <label for="mission">Mission</label>
-                <section>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, ipsa.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet, assumenda voluptatibus unde ratione molestias.
-                    </p>
-                </section>
-                <section>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, ipsa.
-                    </p>
-                </section>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Vision</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Mission</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    
+                    <section>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, ipsa.
+                        </p>
+                    </section>
+
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    
+                    <section>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, ipsa.
+                        </p>
+                    </section>
+
+                </div>
+                </div>            
             </article>
         </section>
         <!-- COMPANY SECTION END -->
@@ -217,5 +230,7 @@
         </p>
         <a href="#" class="fa-solid fa-arrow-up"></a>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
